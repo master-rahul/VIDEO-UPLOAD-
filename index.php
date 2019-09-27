@@ -10,11 +10,7 @@ mysql_connect("localhost","root","");
 		
 		$url="http://localhost/projects/Video%20upload%20and%20playback/uploaded/$name";
 	mysql_query("INSERT INTO `videos` VALUE('','$name','$url')");
-		}
-	
-
-
-
+	}
 ?>
 
 <html>
@@ -28,8 +24,7 @@ mysql_connect("localhost","root","");
 
 </form>
 <?php
-if(isset($_POST['submit']))
-{
+if(isset($_POST['submit'])){
 	echo "<br />".$name." file has been uploaded";
 }
 ?>
